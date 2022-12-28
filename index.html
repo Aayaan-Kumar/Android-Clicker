@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Clicker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="name()">
+    <header>
+        <a href="#shop"><h2>Shop</h2></a>
+        <h1>Android Clicker</h1>
+        <h2 id="userName">Hey,</h2>
+    </header>
+
+    <center>
+        <div class="musicBox">
+            <b>Listen to music while playing...</b>
+            <audio controls>
+                <source src="./music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="gameBtn" id="gameBtn" onclick="clicker()">
+            <img src="./imgs/android.png">
+        </div>
+
+        <div class="texts">
+            <p class="anText">Android tokens: <span class="anNum" id="tokens">0</span></p>
+            <p class="anText">Tokens per click: <span class="anNum" id="tokensPerClick">1</span></p>
+            <p class="anText">Tokens per second: <span class="anNum" id="tokensPerSecond">0</span></p>
+        </div>
+
+        <h1 id="shop">SHOP</h1>
+
+        <div class="shop">
+            
+
+
+            <article>
+                <img src="./imgs/Pixel 5.png">
+                <p>Pixel 5</p>
+                <p>Cost: 20</p>
+                <p>+10 tokens per click</p>
+                <button class="bn5" onclick="Pixel5Buy()">Purchase</button>
+            </article> 
+
+            <article>
+                <img src="./imgs/Pixel 6.png">
+                <p>Pixel 6</p>
+                <p>Cost: 500</p>
+                <p>+10 tokens per second</p>
+                <button class="bn5" onclick="Pixel6Buy()">Purchase</button>
+            </article>
+
+            <article>
+                <img src="./imgs/Pixel 7.png">
+                <p>Pixel 7</p>
+                <p>Cost: 5000</p>
+                <p>+1000 tokens per click and second</p>
+                <button class="bn5" onclick="Pixel7Buy()">Purchase</button>
+            </article>
+
+            <article>
+                <img src="./imgs/google.jpg">
+                <p>Google</p>
+                <p>Cost: 500000</p>
+                <p>+10000 tokens per second</p>
+                <button class="bn5" onclick="GoogleBuy()">Purchase</button>
+            </article>
+
+
+          
+
+
+        </div>
+
+    </center>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
